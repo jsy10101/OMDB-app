@@ -1,0 +1,8 @@
+.Footer {
+  flex-shrink: 0; /* for setting footer at bottom */
+  width: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(68, 174, 222);
+}

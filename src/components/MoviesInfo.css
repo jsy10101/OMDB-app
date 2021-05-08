@@ -1,0 +1,18 @@
+img {
+  width: 195px;
+  height: 260px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: solid;
+  margin: 1rem;
+  text-align: center;
+  width: 195px;
+  height: 314px;
+}
