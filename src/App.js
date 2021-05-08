@@ -19,8 +19,13 @@ function App() {
     console.log(url + "s=" + searchQuery);
     const json_data = await fetch(url + "s=" + searchQuery);
     const data = await json_data.json();
-    setMovies(data.Search);
-    setResponse(() => (data.Response === "True" ? true : false));
+
+    if (data.Response === "True") {
+      setResponse(true);
+      setMovies(data.Search);
+    } else {
+      setResponse(false);
+    }
   };
 
   const resetResponse = () => {
