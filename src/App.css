@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
 html,
 body,
 .root,
@@ -5,18 +7,15 @@ body,
   min-height: 100vh;
   margin: 0px;
   padding: 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #4c4c4c !important;
 }
 
 .App-content {
+  background-color: #eee;
   display: flex;
+  align-items: center;
   flex-direction: column;
   flex-grow: 1;
-}
-
-.Header {
-  font-size: 3rem;
-  margin: 0rem 0rem 1rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: rgb(68, 174, 222);
 }

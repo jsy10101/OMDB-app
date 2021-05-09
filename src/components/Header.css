@@ -1,0 +1,11 @@
+.Header {
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.4rem;
+  color: white;
+  background-color: #046582;
+  flex-shrink: 0;
+  font-size: 3rem;
+  padding: 1rem;
+  text-align: center;
+}

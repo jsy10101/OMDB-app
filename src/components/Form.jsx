@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import SearchIcon from "@material-ui/icons/Search";
+import ClearIcon from "@material-ui/icons/Clear";
 import "./Form.css";
 
 export default function Form(props) {
@@ -10,6 +12,9 @@ export default function Form(props) {
 
   return (
     <form>
+      <span className="search-icon">
+        <SearchIcon />
+      </span>
       <input
         type="text"
         placeholder="Search for movies, shows..."
@@ -17,7 +22,18 @@ export default function Form(props) {
         name="inputText"
         value={inputText}
       />
-      <button onClick={props.getMovies}>Search</button>
+      <button className="invisible-btn" onClick={props.getMovies}></button>
+      <span className="clear-icon">
+        {inputText !== "" && (
+          <button
+            onClick={() => {
+              setInputText("");
+            }}
+          >
+            <ClearIcon />
+          </button>
+        )}
+      </span>
     </form>
   );
 }
